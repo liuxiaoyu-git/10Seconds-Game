@@ -8,8 +8,11 @@ $username = trim($_POST['username']);
 $code = trim($_POST['code']);
 $result = trim($_POST['result']);
 $second=strstr($result,':',TRUE);
+echo "second=".$second;
 $microsecond==strstr($result,':');
+echo "microsecond=".$microsecond;
 $gap=abs(10000-1000*(int)$second-(int)$microsecond);
+echo "gap=".$gap;
 $connection = mysqli_connect($dbhost.":".$dbport, $dbuser, $dbpwd, $dbname) or die("Error " . mysqli_error($connection));
 $sql = "insert into 10seconds values('".$username."-".$code."','".$result."',".$gap.")";
 if ($connection->query($sql) !== TRUE) {  
