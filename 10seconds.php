@@ -34,7 +34,7 @@
         second=second+1;
       }
       
-      document.getElementById('timetext').value=second+':'+millisecond;
+      document.getElementById('timetext').value=second+':'+(Array(3).join('0') + millisecond).slice(-3);
     }
   
     function stop()//暂停
