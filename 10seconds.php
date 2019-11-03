@@ -48,7 +48,7 @@
 <form method=post action=10seconds_result.php>
   姓和名：<input name=username type="text"/><br>
   抽奖码：<input name=code type="text"/><br>
-  <input type="text" id="timetext" name="timetext" value="-----" readonly/><br>
+  <input type="text" id="timetext" name="result" value="-----" readonly/><br>
   <button type="button" onclick="start()">开始</button> 
   <button type="button" onclick="stop()">停止</button> 
   <button type="button" onclick="Reset()">重置</button>
