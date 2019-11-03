@@ -10,7 +10,7 @@ $result = trim($_POST['result']);
 $second=strstr($result,':',TRUE);
 echo "second=".$second;
 echo "result=".$result;
-$microsecond==strstr($result,':');
+$microsecond=substr($result,-3);
 echo "microsecond=".$microsecond;
 $gap=abs(10000-1000*(int)$second-(int)$microsecond);
 echo "gap=".$gap;
