@@ -22,12 +22,12 @@
   
     function start()//开始
     {
-      int=setInterval(timer,13);
+      int=setInterval(timer,9);
     }
   
     function timer()//计时
     {
-      millisecond=millisecond+13;
+      millisecond=millisecond+9;
       if(millisecond>=1000)
       {
         millisecond=millisecond-1000;
